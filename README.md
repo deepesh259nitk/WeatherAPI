@@ -59,8 +59,7 @@ Singleton Objects for caching data
 Simple Xcode Run using iOS simlutors on iPhones only. 
 
 ## Built With
-Foundation Framework. 
-
+Xcode 8.3.1 
 
 ## Versioning
 1.0 
