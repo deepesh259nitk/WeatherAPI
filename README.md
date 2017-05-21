@@ -56,7 +56,7 @@ Singleton Objects for caching data
 
 ## Deployment
 
-Simple Xcode Run using iOS simlutors on iPhones only. 
+Simple Xcode Run using iOS simulators on iPhones only. 
 
 ## Built With
 Xcode 8.3.1 
