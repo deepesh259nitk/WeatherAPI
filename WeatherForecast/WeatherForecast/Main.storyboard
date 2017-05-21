@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VOW-8p-QGX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ExpertSans-ExtraBold.ttf">
+            <string>ExpertSans-ExtraBold</string>
+        </array>
+        <array key="ExpertSans-Light.ttf">
+            <string>ExpertSans-Light</string>
+        </array>
+        <array key="ExpertSans-Regular.ttf">
+            <string>ExpertSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Weather Forecast-->
+        <scene sceneID="vib-dF-lWw">
+            <objects>
+                <tableViewController id="YwY-CK-zBP" customClass="WeatherListViewController" customModule="WeatherForecast" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="192" sectionHeaderHeight="28" sectionFooterHeight="28" id="9BJ-Ut-LVJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.30301155670040325" green="0.41137033208616197" blue="0.80163341760635376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellIdentifier" rowHeight="212" id="DOW-VK-5kf" customClass="WeatherCell" customModule="WeatherForecast" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="212"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.59999999999999998" contentMode="center" tableViewCell="DOW-VK-5kf" id="p5W-pi-auk">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="211.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKN-eZ-NLb">
+                                            <rect key="frame" x="118.5" y="44" width="138" height="89.5"/>
+                                            <fontDescription key="fontDescription" name="ExpertSans-ExtraBold" family="Expert Sans" pointSize="70"/>
+                                            <color key="textColor" red="0.23529411759999999" green="0.4823529412" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bY5-fB-K2M">
+                                            <rect key="frame" x="274" y="13" width="32.5" height="18"/>
+                                            <fontDescription key="fontDescription" name="ExpertSans-Regular" family="Expert Sans" pointSize="14"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggest to carry your umberella " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wId-Qw-uWu">
+                                            <rect key="frame" x="30" y="160.5" width="327" height="21"/>
+                                            <fontDescription key="fontDescription" name="ExpertSans-Light" family="Expert Sans" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqN-6Q-3nM">
+                                            <rect key="frame" x="164.5" y="10" width="46.5" height="24.5"/>
+                                            <fontDescription key="fontDescription" name="ExpertSans-ExtraBold" family="Expert Sans" pointSize="19"/>
+                                            <color key="textColor" red="0.086274509803921567" green="0.074509803921568626" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloudy with Light Rains " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxD-EB-2g5">
+                                            <rect key="frame" x="30" y="135.5" width="327" height="21"/>
+                                            <fontDescription key="fontDescription" name="ExpertSans-Light" family="Expert Sans" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gga-3a-Mpl">
+                                            <rect key="frame" x="221" y="13" width="35" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="ExpertSans-Regular" family="Expert Sans" pointSize="15"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2v-JH-SFX">
+                                            <rect key="frame" x="258" y="7" width="14" height="34.5"/>
+                                            <fontDescription key="fontDescription" name="ExpertSans-Regular" family="Expert Sans" pointSize="27"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.42352941176470588" green="0.63529411764705879" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="NqN-6Q-3nM" firstAttribute="centerY" secondItem="bY5-fB-K2M" secondAttribute="centerY" id="3Mk-oj-05t"/>
+                                        <constraint firstItem="wId-Qw-uWu" firstAttribute="top" secondItem="IxD-EB-2g5" secondAttribute="bottom" constant="4" id="68u-A1-DbD"/>
+                                        <constraint firstItem="d2v-JH-SFX" firstAttribute="top" secondItem="p5W-pi-auk" secondAttribute="topMargin" id="CM3-7V-fMD"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="wId-Qw-uWu" secondAttribute="trailing" constant="10" id="DU7-mG-WgR"/>
+                                        <constraint firstItem="Gga-3a-Mpl" firstAttribute="top" secondItem="p5W-pi-auk" secondAttribute="topMargin" constant="5" id="GIh-cC-s3G"/>
+                                        <constraint firstItem="bY5-fB-K2M" firstAttribute="top" secondItem="p5W-pi-auk" secondAttribute="topMargin" constant="5" id="H5Z-Bw-2Wl"/>
+                                        <constraint firstItem="NqN-6Q-3nM" firstAttribute="centerX" secondItem="p5W-pi-auk" secondAttribute="centerX" id="IUT-Br-WD2"/>
+                                        <constraint firstItem="IxD-EB-2g5" firstAttribute="leading" secondItem="p5W-pi-auk" secondAttribute="leadingMargin" constant="22" id="J80-a5-t4E"/>
+                                        <constraint firstItem="NqN-6Q-3nM" firstAttribute="top" secondItem="p5W-pi-auk" secondAttribute="topMargin" constant="2" id="OdU-38-2bO"/>
+                                        <constraint firstItem="NqN-6Q-3nM" firstAttribute="centerY" secondItem="Gga-3a-Mpl" secondAttribute="centerY" id="X13-sF-1Ht"/>
+                                        <constraint firstItem="gKN-eZ-NLb" firstAttribute="centerX" secondItem="p5W-pi-auk" secondAttribute="centerX" id="YuB-kA-xxN"/>
+                                        <constraint firstItem="wId-Qw-uWu" firstAttribute="leading" secondItem="p5W-pi-auk" secondAttribute="leadingMargin" constant="22" id="aZv-v6-mdp"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="IxD-EB-2g5" secondAttribute="trailing" constant="10" id="cTe-RL-0Za"/>
+                                        <constraint firstItem="Gga-3a-Mpl" firstAttribute="leading" secondItem="NqN-6Q-3nM" secondAttribute="trailing" constant="10" id="csF-cR-ikJ"/>
+                                        <constraint firstItem="d2v-JH-SFX" firstAttribute="leading" secondItem="Gga-3a-Mpl" secondAttribute="trailing" constant="2" id="e6m-xD-vxS"/>
+                                        <constraint firstItem="IxD-EB-2g5" firstAttribute="top" secondItem="gKN-eZ-NLb" secondAttribute="bottom" constant="2" id="o8h-yV-d9I"/>
+                                        <constraint firstItem="gKN-eZ-NLb" firstAttribute="top" secondItem="NqN-6Q-3nM" secondAttribute="bottom" constant="9" id="u7z-uu-Mf3"/>
+                                        <constraint firstItem="bY5-fB-K2M" firstAttribute="leading" secondItem="d2v-JH-SFX" secondAttribute="trailing" constant="2" id="uRn-wE-ntm"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="currentTemperature" destination="gKN-eZ-NLb" id="P4e-SN-q58"/>
+                                    <outlet property="day" destination="NqN-6Q-3nM" id="pXU-s6-NbK"/>
+                                    <outlet property="maxTemperature" destination="bY5-fB-K2M" id="uSw-8Y-pOu"/>
+                                    <outlet property="minimumTemperature" destination="Gga-3a-Mpl" id="9hI-3N-gLq"/>
+                                    <outlet property="suggestion" destination="wId-Qw-uWu" id="ooB-J6-wgk"/>
+                                    <outlet property="weatherType" destination="IxD-EB-2g5" id="iBp-UW-n3l"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YwY-CK-zBP" id="nMU-rc-C59"/>
+                            <outlet property="delegate" destination="YwY-CK-zBP" id="oro-MD-nMr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Weather Forecast" id="ql0-oT-kvW"/>
+                    <connections>
+                        <outlet property="weatherListTableView" destination="9BJ-Ut-LVJ" id="1GT-rc-4jn"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GKo-VJ-kfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984.8" y="354.87256371814095"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="v19-Ws-Ma4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VOW-8p-QGX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zpM-Rt-PTZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YwY-CK-zBP" kind="relationship" relationship="rootViewController" id="YmN-lr-NwE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bBo-Io-rzc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045.5999999999999" y="354.87256371814095"/>
+        </scene>
+    </scenes>
+</document>
