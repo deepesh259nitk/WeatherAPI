@@ -15,7 +15,7 @@ Swfit : 3.1
 
 ### Installing
 
-Clone the repo 
+Clone the repo and 
 Double click on the WeatherForecast.xcodeproj and open with Xcode 8.3.1 only using Swift 3.1 
 
 ## Running the tests
